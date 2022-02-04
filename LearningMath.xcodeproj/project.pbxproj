@@ -11,6 +11,11 @@
 		CCE0F5F127ACAD0300024F63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0F5F027ACAD0300024F63 /* ContentView.swift */; };
 		CCE0F5F327ACAD0400024F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE0F5F227ACAD0400024F63 /* Assets.xcassets */; };
 		CCE0F5F627ACAD0400024F63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE0F5F527ACAD0400024F63 /* Preview Assets.xcassets */; };
+		CCE0F5FE27ACAD8C00024F63 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCE0F5FC27ACAD8C00024F63 /* Main.xcdatamodeld */; };
+		CCE0F60027ACAFB300024F63 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0F5FF27ACAFB300024F63 /* DataController.swift */; };
+		CCE0F60527ACB40500024F63 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0F60427ACB40500024F63 /* CloudKit.framework */; };
+		CCE0F60727ACB48E00024F63 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0F60627ACB48E00024F63 /* HomeView.swift */; };
+		CCE0F60927ACB54800024F63 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0F60827ACB54800024F63 /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,13 @@
 		CCE0F5F027ACAD0300024F63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCE0F5F227ACAD0400024F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCE0F5F527ACAD0400024F63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCE0F5FD27ACAD8C00024F63 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		CCE0F5FF27ACAFB300024F63 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CCE0F60127ACB3DE00024F63 /* LearningMath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearningMath.entitlements; sourceTree = "<group>"; };
+		CCE0F60227ACB3EC00024F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CCE0F60427ACB40500024F63 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CCE0F60627ACB48E00024F63 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CCE0F60827ACB54800024F63 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE0F60527ACB40500024F63 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +50,7 @@
 			children = (
 				CCE0F5ED27ACAD0300024F63 /* LearningMath */,
 				CCE0F5EC27ACAD0300024F63 /* Products */,
+				CCE0F60327ACB40500024F63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +65,14 @@
 		CCE0F5ED27ACAD0300024F63 /* LearningMath */ = {
 			isa = PBXGroup;
 			children = (
+				CCE0F60227ACB3EC00024F63 /* Info.plist */,
+				CCE0F60127ACB3DE00024F63 /* LearningMath.entitlements */,
 				CCE0F5EE27ACAD0300024F63 /* LearningMathApp.swift */,
+				CCE0F5FC27ACAD8C00024F63 /* Main.xcdatamodeld */,
+				CCE0F5FF27ACAFB300024F63 /* DataController.swift */,
 				CCE0F5F027ACAD0300024F63 /* ContentView.swift */,
+				CCE0F60627ACB48E00024F63 /* HomeView.swift */,
+				CCE0F60827ACB54800024F63 /* ProjectsView.swift */,
 				CCE0F5F227ACAD0400024F63 /* Assets.xcassets */,
 				CCE0F5F427ACAD0400024F63 /* Preview Content */,
 			);
@@ -65,6 +85,14 @@
 				CCE0F5F527ACAD0400024F63 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CCE0F60327ACB40500024F63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCE0F60427ACB40500024F63 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE0F60927ACB54800024F63 /* ProjectsView.swift in Sources */,
+				CCE0F5FE27ACAD8C00024F63 /* Main.xcdatamodeld in Sources */,
+				CCE0F60027ACAFB300024F63 /* DataController.swift in Sources */,
 				CCE0F5F127ACAD0300024F63 /* ContentView.swift in Sources */,
+				CCE0F60727ACB48E00024F63 /* HomeView.swift in Sources */,
 				CCE0F5EF27ACAD0300024F63 /* LearningMathApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,12 +298,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearningMath/LearningMath.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearningMath/Preview Content\"";
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningMath/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,12 +329,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearningMath/LearningMath.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearningMath/Preview Content\"";
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningMath/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +377,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CCE0F5FC27ACAD8C00024F63 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCE0F5FD27ACAD8C00024F63 /* Main.xcdatamodel */,
+			);
+			currentVersion = CCE0F5FD27ACAD8C00024F63 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CCE0F5E327ACAD0300024F63 /* Project object */;
 }
